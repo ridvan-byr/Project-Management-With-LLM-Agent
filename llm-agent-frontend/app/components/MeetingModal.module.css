@@ -1,0 +1,247 @@
+/* Takvim Ana Container */
+.custom-datepicker {
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  width: 340px !important;
+  height: 380px !important;
+  position: relative !important;
+  z-index: 1000 !important;
+  overflow: hidden;
+}
+
+/* Takvim wrapper */
+.datepicker-wrapper {
+  display: block !important;
+  width: 340px !important;
+  height: 380px !important;
+  position: relative !important;
+}
+
+/* Header tasarımı */
+.custom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  background: var(--calendar-header-bg, #f3f4f6);
+  border-radius: 10px;
+  border: 1px solid var(--calendar-border, #e5e7eb);
+  width: 90% !important;
+  min-width: 240px !important;
+  max-width: 320px !important;
+  box-sizing: border-box !important;
+}
+
+.custom-header button {
+  background: var(--calendar-btn-bg, #e5e7eb);
+  border: 1px solid var(--calendar-border, #e5e7eb);
+  color: var(--calendar-btn-color, #222);
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background 0.2s;
+  width: 28px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+}
+
+.custom-header button:hover {
+  background: var(--calendar-btn-hover, #d1d5db);
+  transform: none;
+}
+
+.custom-header span {
+  color: var(--calendar-header-color, #222);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  flex: 1;
+  text-transform: capitalize;
+  width: 140px !important;
+  min-width: 140px !important;
+  max-width: 140px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: block !important;
+  line-height: 36px !important;
+  height: 36px !important;
+}
+
+/* Takvim container */
+.react-datepicker {
+  background: transparent !important;
+  border: none !important;
+  font-family: 'Inter', sans-serif;
+  width: 100% !important;
+}
+
+.react-datepicker__month-container {
+  background: transparent !important;
+  width: 100% !important;
+}
+
+.react-datepicker__month {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.react-datepicker__week {
+  display: flex !important;
+  justify-content: space-between !important;
+  margin-bottom: 8px !important;
+  width: 100% !important;
+  gap: 6px !important;
+}
+
+/* Gün başlıkları */
+.react-datepicker__day-names {
+  margin-bottom: 12px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  gap: 6px !important;
+}
+
+.react-datepicker__day-name {
+  color: var(--calendar-dayname, #374151) !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  text-align: center !important;
+  background: var(--calendar-dayname-bg, #f3f4f6) !important;
+  border-radius: 8px !important;
+  margin: 2px !important;
+  border: 1px solid var(--calendar-border, #e5e7eb) !important;
+  box-shadow: none !important;
+  flex: 1 !important;
+  max-width: 36px !important;
+}
+
+/* Normal günler */
+.react-datepicker__day {
+  background: var(--calendar-day-bg, #fff) !important;
+  color: var(--calendar-day-color, #222) !important;
+  border: 1px solid var(--calendar-border, #e5e7eb) !important;
+  border-radius: 8px !important;
+  margin: 2px !important;
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  transition: background 0.2s, color 0.2s !important;
+  position: relative !important;
+  box-shadow: none !important;
+  flex: 1 !important;
+  max-width: 36px !important;
+}
+
+.react-datepicker__day:hover {
+  background: var(--calendar-day-hover, #e5e7eb) !important;
+  color: var(--calendar-day-hover-color, #222) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Seçili gün */
+.react-datepicker__day--selected {
+  background: var(--calendar-selected, #2563eb) !important;
+  color: #fff !important;
+  border: 1px solid var(--calendar-selected, #2563eb) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Bugün */
+.react-datepicker__day--today {
+  background: var(--calendar-today, #f3f4f6) !important;
+  color: var(--calendar-today-color, #2563eb) !important;
+  border: 1px solid var(--calendar-today, #f3f4f6) !important;
+  font-weight: 700 !important;
+}
+
+/* Devre dışı günler */
+.react-datepicker__day--disabled {
+  background: var(--calendar-disabled-bg, #f9fafb) !important;
+  color: var(--calendar-disabled-color, #d1d5db) !important;
+  border: 1px solid var(--calendar-border, #e5e7eb) !important;
+  cursor: not-allowed !important;
+}
+
+/* Ay dışı günler */
+.react-datepicker__day--outside-month {
+  background: var(--calendar-outside-bg, #f9fafb) !important;
+  color: var(--calendar-outside-color, #d1d5db) !important;
+  border: 1px solid var(--calendar-border, #e5e7eb) !important;
+}
+
+/* Toplantı olan günler */
+.has-meeting {
+  background: var(--calendar-meeting, #10b981) !important;
+  color: #fff !important;
+  border: 1px solid var(--calendar-meeting, #10b981) !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+
+.has-meeting::after {
+  content: '📅';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  font-size: 8px;
+  line-height: 1;
+}
+
+.has-meeting:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+  transform: translateY(-2px) scale(1.05) !important;
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.5) !important;
+}
+
+/* Seçili toplantı günü */
+.has-meeting.react-datepicker__day--selected {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.5) !important;
+}
+
+/* Bugün ve toplantı olan gün */
+.has-meeting.react-datepicker__day--today {
+  background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%) !important;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.5) !important;
+}
+
+/* Header gizleme */
+.react-datepicker__header,
+.react-datepicker__header * {
+  display: none !important;
+}
+
+.custom-datepicker .react-datepicker__header {
+  display: none !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* Genel temizlik */
+.react-datepicker,
+.react-datepicker__month-container,
+.react-datepicker__month,
+.react-datepicker__week {
+  border: none !important;
+  outline: none !important;
+} 

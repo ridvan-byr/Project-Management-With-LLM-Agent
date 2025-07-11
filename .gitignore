@@ -1,0 +1,44 @@
+llm-agent-frontend/node_modules/
+llm-agent-backend/node_modules/
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env*.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build files
+llm-agent-frontend/.next/
+llm-agent-frontend/out/
+llm-agent-frontend/build/
+llm-agent-backend/dist/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Database configuration files
+llm-agent-backend/db.js
+llm-agent-backend/config/database.js
+
